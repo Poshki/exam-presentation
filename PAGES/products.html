@@ -1,0 +1,631 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>TINC Products</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="Description" content="See all the available eco-friendly products you can find at TINC">
+    <link rel="stylesheet" type="text/css" href="products.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            overflow-x: hidden;
+            min-height: 100%;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: cover;
+            background-position: top;
+        }
+
+        body {
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+    </style>
+</head>
+
+<body style="overflow-x:hidden;">
+    <nav class="menu">
+        <div class="burger-box">
+            <div id="burger" class="container" onClick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbox">
+                <div class="logo-2">
+                    <a href="../index.html"><img src="../images/logo-2.jpg" alt="Home Page" width="200"></a>
+                </div>
+                <div>
+                    <ul class="list">
+                        <a href="products.html">
+                            <li>PRODUCTS</li>
+                        </a>
+                        <li>GOOD CAUSE</li>
+                        <a href="sales.html">
+                            <li>SALES</li>
+                        </a>
+                        <a href="about-us.html">
+                            <li>ABOUT US</li>
+                        </a>
+                        <li>BASKET</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header>
+            <div class="promotion-tab">
+                <div class="promo-text">Buy soap, shampoo and other products and 10% of the price goes to charity</div>
+                <div class="promo-info"><a href="good-cause.html" class="promo-link">Click here</a> to read more</div>
+            </div>
+            <div class="head-buttons">
+                <div class="head-button"><a href="#"><img src="../images/search.png" alt="search"></a></div>
+                <div class="head-button"><a href="#"><img src="../images/basket.png" alt="basket"></a></div>
+                <div class="head-button"><a href="#"><img src="../images/user.png" alt="user-profile"></a></div>
+            </div>
+            <nav class="header">
+                <div class="logo">
+                    <div class="home-page"><a href="../index.html"><img src="../images/logo.jpg" alt="TINC logo" width="250"></a></div>
+                </div>
+                <div class="nav">
+                    <div id="main-cat" class="nav-button"><a href="products.html">PRODUCTS</a></div>
+                    <div class="nav-button">GOOD CAUSE</div>
+                    <div class="nav-button"><a href="sales.html">SALES</a></div>
+                    <div class="nav-button"><a href="about-us.html">ABOUT US</a></div>
+                </div>
+            </nav>
+        </header>
+        <main class="body">
+            <div class="content">
+                <aside>
+                    <section class="categories">
+                        <div class="cat-head-pc">
+                            <div class="main-flip">
+                                <div class="flip-head">PRODUCTS</div>
+                            </div>
+                        </div>
+                        <div class="cat-head-phone">
+                            <div class="main-flip">
+                                <div class="flip-head">PRODUCTS</div>
+                                <div id="flipper-2">
+                                    <img class="plus" src="../images/plus-white.png">
+                                    <img class="minus" src="../images/minus-white.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-toggle">
+                            <div class="hair-cat">
+                                <div class="flip-1">
+                                    <div class="cat">BODY</div>
+                                    <div id="flip-1">
+                                        <img class="plus-1" src="../images/plus.png">
+                                        <img class="minus-1" src="../images/minus.png">
+                                    </div>
+                                </div>
+                                <div id="panel-1">
+                                    <div id="link-1">
+                                        <div>Soaps</div>
+                                    </div>
+                                    <div id="link-2">
+                                        <div>Creams</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shaving-cat">
+                                <div class="flip-2">
+                                    <div class="cat">HAIR</div>
+                                    <div id="flip-2">
+                                        <img class="plus-2" src="../images/plus.png">
+                                        <img class="minus-2" src="../images/minus.png">
+                                    </div>
+                                </div>
+                                <div id="panel-2">
+                                    <div id="link-3">Shampoos</div>
+                                    <div id="link-4">Conditioners</div>
+                                </div>
+                            </div>
+                            <div class="accessories-cat">
+                                <div class="flip-3">
+                                    <div class="cat">FOOD</div>
+                                    <div id="flip-3">
+                                        <img class="plus-3" src="../images/plus.png">
+                                        <img class="minus-3" src="../images/minus.png">
+                                    </div>
+                                </div>
+                                <div id="panel-3">
+                                    <div id="link-5">Snacks</div>
+                                    <div id="link-6">Drinks</div>
+                                </div>
+                            </div>
+                            <div class="cosmetics-cat">
+                                <div class="flip-4">
+                                    <div class="cat">WOMEN</div>
+                                    <div id="flip-4">
+                                        <img class="plus-4" src="../images/plus.png">
+                                        <img class="minus-4" src="../images/minus.png">
+                                    </div>
+                                </div>
+                                <div id="panel-4">
+                                    <div id="link-7">COSMETICS</div>
+                                </div>
+                            </div>
+                            <div class="body-cat">
+                                <div class="flip-5">
+                                    <div class="cat">MEN</div>
+                                    <div id="flip-5">
+                                        <img class="plus-5" src="../images/plus.png">
+                                        <img class="minus-5" src="../images/minus.png">
+                                    </div>
+                                </div>
+                                <div id="panel-5">
+                                    <div id="link-8">SHAVING AND <br> SKIN CARE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+                <section class="items">
+                    <div class="sorting">
+                        <div>sort by:</div>
+                        <div class="sort-list">
+                            <div id="filter" class="default">
+                                <div>Recommended</div>
+                                <img class="expand" src="../images/expand.jpg.png">
+                                <img class="contract" src="../images/contract.jpg.png">
+                            </div>
+                            <div class="drop-list">
+                                <div class="filter">Highest Price</div>
+                                <div class="filter">Lowest Price</div>
+                                <div class="filter">Name</div>
+                                <div class="filter">Biggest Discount</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-1">
+                        <div class="products-1">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02808-mid.jpg" alt="SOAP LAVENDER PLUS"></a>
+                                    <div>SOAP LAVENDER PLUS</div>
+                                    <div>39 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02816-mid.jpg" alt="SOAP ENERGISE"></a>
+                                    <div>SOAP ENERGISE</div>
+                                    <div>39 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02827-mid.jpg" alt="SOAP GARDNER'S"></a>
+                                    <div>SOAP GARDNER'S</div>
+                                    <div>39 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02834-mid.jpg" alt="SOAP HEMP"></a>
+                                    <div>SOAP HEMP</div>
+                                    <div>39 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02844-mid.jpg" alt="SOAP JUST SOAP"></a>
+                                    <div>SOAP JUST SOAP</div>
+                                    <div>39 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02854-mid.jpg" alt="SOAP WHITE LAVENDER"></a>
+                                    <div>SOAP WHITE LAVENDER</div>
+                                    <div>39 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-2">
+                        <div class="products-2">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0189-mid.jpg" alt="DELIA BODY LOTION"></a>
+                                    <div>DELIA BODY LOTION</div>
+									<div>60 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0187-mid.jpg" alt="HONEY REGENERATING NATURAL HAND LOTION"></a>
+                                    <div>HONEY REGENERATING NATURAL HAND LOTION</div>
+									<div>120 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0185-mid.jpg" alt="BIO GLOW MOISTURIING LOTION"></a>
+                                    <div>BIO GLOW MOISTURIING LOTION</div>
+									<div>60 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0183-mid.jpg" alt="DELIA MOISTURIZING BODY BUTTER"></a>
+                                    <div>DELIA MOISTURIZING BODY BUTTER</div>
+									<div>60 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0181-mid.jpg" alt="OLIVE OIL OF GREECE HAND CREAM"></a>
+                                    <div>OLIVE OIL OF GREECE HAND CREAM</div>
+									<div>20 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0179-mid.jpg" alt="TINC ECOLOGIC SHEA BUTTER"></a>
+                                    <div>TINC ECOLOGIC SHEA BUTTER</div>
+									<div>50 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-3">
+                        <div class="products-3">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02864-mid.jpg" alt="CAMELEO KERATIN SHAMPOO"></a>
+                                    <div>CAMELEO KERATIN SHAMPOO</div>
+                                    <div>79 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02868-mid.jpg" alt="CAMELEO NATURAL SHAMPOO"></a>
+                                    <div>CAMELEO NATURAL SHAMPOO</div>
+                                    <div>79 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02887-mid.jpg" alt="CAMELEO KERATIN SHAMPOO"></a>
+                                    <div>CAMELEO KERATIN SHAMPOO</div>
+                                    <div>79 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02875-mid.jpg" alt="YOPE FRESH GRASS SHAMPOO"></a>
+                                    <div>YOPE FRESH GRASS SHAMPOO</div>
+                                    <div>75 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02882-mid.jpg" alt="YOPE OAT MILK SHAMPOO"></a>
+                                    <div>YOPE OAT MILK SHAMPOO</div>
+                                    <div>75 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02892-mid.jpg" alt="TIMOMEI SHAMPOO"></a>
+                                    <div>TIMOMEI SHAMPOO</div>
+                                    <div>89 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-4">
+                        <div class="products-4">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0177-mid.jpg" alt="YOPE OAT MILK CONDITIONER"></a>
+                                    <div>YOPE OAT MILK CONDITIONER</div>
+									<div>40 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0175-mid.jpg" alt="CAMELEO NATURAL DETOX CONDITIONER"></a>
+                                    <div>CAMELEO NATURAL DETOX CONDITIONER</div>
+									<div>30 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0173-mid.jpg" alt="REVUELE HAMAN SECRET CONDITIONER"></a>
+                                    <div>REVUELE HAMAN SECRET CONDITIONER</div>
+									<div>150 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0171-mid.jpg" alt="INSIGHT COLORED HAIR CONDITIONER"></a>
+                                    <div>INSIGHT COLORED HAIR CONDITIONER</div>
+									<div>180 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0169-mid.jpg" alt="CAMELEO ANTI-HAIRLOSS CONDITIONER"></a>
+                                    <div>CAMELEO ANTI-HAIRLOSS CONDITIONER</div>
+									<div>30 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0167-mid.jpg" alt="CAMELEO ANTI-YELLOW EFFECT CONDITIONER"></a>
+                                    <div>CAMELEO ANTI-YELLOW EFFECT CONDITIONER</div>
+									<div>30 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-5">
+                        <div class="products-5">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02899-mid.jpg" alt="DIABLO HAZELNUT AND CHOCOLATE SPREAD"></a>
+                                    <div>DIABLO HAZELNUT AND CHOCOLATE SPREAD</div>
+                                    <div>50 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02905-mid.jpg" alt="DIABLO COOKIES"></a>
+                                    <div>DIABLO COOKIES</div>
+                                    <div>55 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02909-mid.jpg" alt="BOLCHEVÆRK"></a>
+                                    <div>BOLCHEVÆRK</div>
+                                    <div>60 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02915-mid.jpg" alt="DARK CHOCOLATE"></a>
+                                    <div>DARK CHOCOLATE</div>
+                                    <div>35 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02921-mid.jpg" alt="HENRY GOODE'S"></a>
+                                    <div>HENRY GOODE'S</div>
+                                    <div>50 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/DSC02928-mid.jpg" alt="BASTAD HONEY"></a>
+                                    <div>BASTAD HONEY</div>
+                                    <div>55 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-6">
+                        <div class="products-6">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0213-mid.jpg" alt="GINGERELLA GINGER ALE"></a>
+                                    <div>GINGERELLA GINGER ALE</div>
+									<div>20 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0211-mid.jpg" alt="LEMONY LEMONADE"></a>
+                                    <div>LEMONY LEMONADE</div>
+									<div>20 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0209-mid.jpg" alt="KARMA COLA"></a>
+                                    <div>KARMA COLA</div>
+									<div>20 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0207-mid.jpg" alt="ROYAL JAMAICAN GINGER ALE"></a>
+                                    <div>ROYAL JAMAICAN GINGER ALE</div>
+									<div>20 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0193-mid.jpg" alt="Brutal Brewing A Ship Full Of IPA"></a>
+                                    <div>Brutal Brewing A Ship Full Of IPA</div>
+									<div>20 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0191-mid.jpg" alt="Brutal Brewing Cirrus"></a>
+                                    <div>Brutal Brewing Cirrus</div>
+									<div>20 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-7">
+                        <div class="products-7">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0205-mid.jpg" alt="BELL ROYAL MAT SKIN CAMOUFLAGE"></a>
+                                    <div>BELL ROYAL MAT SKIN CAMOUFLAGE</div>
+									<div>40 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0203-mid.jpg" alt="BELL LONG WEAR MASCARA"></a>
+                                    <div>BELL LONG WEAR MASCARA</div>
+									<div>50 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0201-mid.jpg" alt="BELL HYPOALLERGENIC COLOUR PALETTE"></a>
+                                    <div>BELL HYPOALLERGENIC COLOUR PALETTE</div>
+									<div>50 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0199-mid.jpg" alt="SKINACADEMY KONJAC SPONGE"></a>
+                                    <div>SKINACADEMY KONJAC SPONGE</div>
+									<div>50 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0197-mid.jpg" alt="CORAL MULTIVITAMIN ENERGY NAIL CONDITIONER"></a>
+                                    <div>CORAL MULTIVITAMIN ENERGY NAIL CONDITIONER</div>
+									<div>60 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0195-mid.jpg" alt="COSMETIC 6"></a>
+                                    <div>DELIA NAIL ENAMEL DRYER SPRAY</div>
+									<div>40 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-8">
+                        <div class="products-8">
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0225-mid.jpg" alt="BY MY BEARD, BEARD SHAMPOO"></a>
+                                    <div>BY MY BEARD, BEARD SHAMPOO</div>
+									<div>35 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0223-mid.jpg" alt="MEN'S MASTER AFTERSHAVE BALM"></a>
+                                    <div>MEN'S MASTER AFTERSHAVE BALM</div>
+									<div>40 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0221-mid.jpg" alt="CAMELEO LIGHT BROWN HAIR COLORIZER"></a>
+                                    <div>CAMELEO LIGHT BROWN HAIR COLORIZER</div>
+									<div>10 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0219-mid.jpg" alt="FRAGRANCE FREE MAN BLAM"></a>
+                                    <div>FRAGRANCE FREE MAN BLAM</div>
+									<div>70 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0217-mid.jpg" alt="BALADE SHAVING SOAP BAR"></a>
+                                    <div>BALADE SHAVING SOAP BAR</div>
+									<div>60 DKK</div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-block-pc">
+                                    <a href="product-1.html"><img class="product-pc" src="../images/Products-pics/IMG_0215-mid.jpg" alt="MEN'S MASTER AFTERSHAVE LOTION"></a>
+                                    <div>MEN'S MASTER AFTERSHAVE LOTION</div>
+									<div>40 DKK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="top-footer">
+                <div class="hours">
+                    <h2>Opening Hours</h2>
+                    <ul>
+                        <li>Monday: 09 - 18</li>
+                        <li>Tuesday: 09 - 18</li>
+                        <li>Wednesday: 09 - 18</li>
+                        <li>Thursday: 09 - 18</li>
+                        <li>Friday: 09 - 19</li>
+                        <li>Saturday: 10 -17</li>
+                        <li>Sunday: 11 -16</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="adress">
+                        <h2>Address</h2>
+                        <span>Frederiksgade 22, 8000 Aarhus</span>
+                    </div>
+                    <div class="email">
+                        <h2>Email</h2>
+                        <span>aarhus@tinc.shop </span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="@">
+                    <h3>&#9400; 2019 TINC</h3>
+                </div>
+                <div class="some">
+                    <div class="insta">
+                        <a href="https://www.instagram.com/tinc.shop/" target="_blank"><img src="../images/insta.png" alt="Instagram link"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/TINC.SHOP/" target="_blank"><img src="../images/fb.png" alt="Facebook link"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+    </script>
+    <script type="text/javascript" src="../java/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../java/products.min.js"></script>
+</body>
+
+</html>

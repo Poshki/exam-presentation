@@ -1,0 +1,804 @@
+.dropdown {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #1e2226;
+    right: -100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.dropdown.clicked {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #1e2226;
+    overflow-y: hidden;
+    z-index: 10;
+}
+
+
+.dropbox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    overflow-y: hidden;
+    z-index: 10;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+    margin: 10vw 50px 0 85%;
+    z-index: 15;
+    position: absolute;
+}
+
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #1e2226;
+    border-radius: 50px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: white;
+}
+
+.change .bar2 {
+    opacity: 0;
+    background-color: white;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+    background-color: white;
+}
+
+.logo-2 {
+    position: relative;
+    margin: 10vw auto 0 auto;
+    width: 55%;
+    z-index: 5000;
+}
+
+.lgo-2 a {
+    z-index: 5000;
+}
+
+
+.logo-2 img {
+    width: 100%;
+    z-index: 5000;
+}
+
+.list {
+    list-style: none;
+    margin-top: 15%;
+    padding: 0;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 9vw;
+    max-height: 100%;
+}
+
+.list li {
+    margin-bottom: 10%;
+}
+
+.list li:hover {
+    color: #91a580;
+}
+
+.promotion-tab {
+    background-color: #91a580;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0.5em 5% 0.5em 5%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.promo-text {
+    letter-spacing: 2px;
+    margin-right: 5%;
+}
+
+.promo-info {
+    letter-spacing: 2px;
+}
+
+.promo-link {
+    text-decoration: underline;
+}
+
+.head-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 4em 0 0;
+}
+
+.head-button {
+    padding: 0 0.5em;
+    transition: all .2s ease-in-out;
+}
+
+.head-button img {
+    width: 40px;
+}
+
+.head-button:hover {
+    transform: scale(1.1);
+}
+
+.body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.nav {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-bottom: solid #91a580 3px;
+    font-size: 18px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-button {
+    padding: 0 0.4em;
+    text-align: center;
+}
+
+.nav-button:hover {
+    color: #91a580;
+}
+
+#main-cat {
+    font-weight: 700;
+}
+
+.content {
+    width: 100%;
+    margin: 5% auto 0 auto;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo,
+.description {
+    width: 49%;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.description img {
+    width: 15vw;
+    margin-bottom: 5%;
+    min-width: 80px;
+}
+
+.order {
+    font-family: 'Raleway', sans-serif;
+}
+
+.name {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    font-size: 3vw;
+}
+
+.description h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    flex: 2;
+    font-size: 2vw;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.counter {
+    width: auto;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+}
+
+.value-button {
+    text-align: center;
+    display: block;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 25%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+.counter #decrease {
+    margin-bottom: 4px;
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+}
+
+.counter #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+}
+
+.counter #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+input#number {
+    text-align: center;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: #ececec;
+    margin: 0;
+    width: 3vw;
+    height: 3vw;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.order {
+    display: flex;
+}
+
+.add-to-cart {
+    background-color: #8B5643;
+    padding: 5px 2%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.add-to-cart:hover {
+    cursor: pointer;
+}
+
+.pop-up-text {
+    max-width: 400px;
+    width: 40%;
+    height: 120px;
+    background-color: #91a580;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    visibility: hidden;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.pop-text {
+    font-size: 40px;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-60%);
+    -webkit-transform: translateX(-50%) translateY(-60%);
+    transform: translateX(-50%) translateY(-60%);
+    text-align: center;
+}
+
+.pop-up-text.active {
+    visibility: visible;
+}
+
+.pop-up {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pop-up.active {
+    visibility: visible;
+}
+
+.close {
+    text-align: center;
+    z-index: 5;
+    float: right;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #353535;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.carousel img {
+    width: 100%;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-text {
+    margin: 10px 0;
+    font-size: 27px;
+}
+
+.product-wrap {
+    background-color: #ececec;
+    border-radius: 10px;
+}
+
+.product-wrap:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.similar {
+    margin-top: 50px;
+}
+
+.similar h1,
+.reviews h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(145, 165, 128);
+    text-decoration-style: solid;
+    font-size: 2vw;
+}
+
+.review-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-1,
+.review-2 {
+    width: 47%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.review-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.rating {
+    width: 12vw;
+    min-width: 80px;
+}
+
+.reviews h3 {
+    width: auto;
+    margin: 0;
+    margin-left: 5%;
+    font-size: 2vw;
+}
+
+.reviews p {
+    margin: 0;
+}
+
+.reviews {
+    margin-bottom: 50px;
+}
+
+.review-name {
+    font-size: 1.3vw;
+}
+
+.review-text {
+    font-size: 1.5vw;
+}
+
+.top-footer {
+    background-color: #1e2226;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px 0;
+}
+
+.top-footer h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.bottom-footer {
+    background-color: #91a580;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.bottom-footer h3 {
+    margin: 0;
+}
+
+.bottom-footer img {
+    width: 2vw;
+    min-width: 40px;
+}
+
+.insta,
+.facebook {
+    margin: 10% 10%;
+    transition: all .2s ease-in-out;
+}
+
+.insta:hover,
+.facebook:hover {
+    transform: scale(1.05);
+}
+
+.hours ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.email {
+    margin-top: 30px;
+}
+
+.some {
+    display: flex;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.body {
+    padding-bottom: 350px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav {
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .review-name {
+        font-size: 1.7vw;
+    }
+
+    .review-text {
+        font-size: 1.9vw;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        margin-left: 0;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .description,
+    .photo {
+        width: 100%;
+    }
+
+    .description {
+        margin-top: 3%;
+    }
+
+    .name {
+        font-size: 3.5vw;
+    }
+
+    .description h2 {
+        font-size: 3vw;
+    }
+
+    .description p {
+        font-size: 2.5vw;
+    }
+
+    .order {
+        margin-top: 5%;
+    }
+
+    input#number {
+        width: 4.5vw;
+        height: 5vw;
+    }
+
+    .pop-text {
+        font-size: 4.75vw;
+    }
+
+    .close {
+        font-size: 30px;
+    }
+
+    .pop-up-text {
+        min-height: 100px;
+        height: 12vw;
+        width: 45%;
+    }
+
+    .similar h1,
+    .reviews h1 {
+        font-size: 3vw;
+    }
+
+    .reviews h3 {
+        font-size: 2.5vw;
+    }
+
+    .review-name {
+        font-size: 15px;
+    }
+
+    .review-text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .head-buttons,
+    .nav,
+    .promotion-tab {
+        display: none;
+    }
+
+
+    .logo {
+        margin: 10vw auto 0 auto;
+        width: 55%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        margin: 50px auto 0 auto;
+    }
+
+    .wrapper {
+        overflow-x: hidden !important;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 15px;
+    }
+
+    .order {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    input#number {
+        width: 5vw;
+        height: 5vw;
+        min-width: 25px;
+        min-height: 25px;
+    }
+
+    .add-to-cart {
+        width: auto;
+        height: 5vw;
+        min-width: 25px;
+        min-height: 25px;
+        font-size: 4vw;
+        padding: 1% 2%;
+    }
+
+    .counter {
+        font-size: 30px;
+    }
+
+    .pop-up-text {
+        min-height: 100px;
+        height: 12vw;
+        width: 45vw;
+        min-width: 250px;
+    }
+
+    .pop-text {
+        font-size: 25px;
+    }
+
+    .value-button {
+        padding-bottom: 15%;
+    }
+
+    .similar h1,
+    .reviews h1 {
+        font-size: 20px;
+    }
+
+    .reviews h3 {
+        font-size: 18px;
+    }
+
+    .review-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-1,
+    .review-2 {
+        width: 100%;
+    }
+
+    .review-1 {
+        margin-bottom: 50px;
+    }
+
+    .review-head {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .reviews h3 {
+        margin: 0;
+    }
+
+    .body {
+        padding-bottom: 100px;
+    }
+
+    .top-footer {
+        display: none;
+    }
+}

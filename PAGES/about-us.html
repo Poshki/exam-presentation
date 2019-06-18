@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>TINC About Us</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="Description" content="Meet the owners of TINC and find more information about the shop">
+    <link rel="stylesheet" type="text/css" href="about-us.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        html,
+        body {
+			height: 100%;
+        	overflow-x: hidden;
+            min-height: 100%;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: cover;
+            background-position: top;
+        }
+		
+		body {
+        	position: relative;
+    	}
+		
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+		#map { 
+			position:relative; 
+		}
+    </style>
+</head>
+
+<body style="overflow-x:hidden;">
+    <nav class="menu">
+        <div class="burger-box">
+            <div id="burger" class="container" onClick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbox">
+                <div class="logo-2">
+                    <a href="../index.html"><img src="../images/logo-2.jpg" alt="Home Page" width="200"></a>
+                </div>
+                <div>
+                    <ul class="list">
+                        <a href="products.html">
+                            <li>PRODUCTS</li>
+                        </a>
+                        <li>GOOD CAUSE</li>
+                        <a href="sales.html">
+                            <li>SALES</li>
+                        </a>
+                        <a href="about-us.html">
+                            <li>ABOUT US</li>
+                        </a>
+                        <li>BASKET</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header>
+            <div class="promotion-tab">
+                <div class="promo-text">Buy soap, shampoo and other products and 10% of the price goes to charity</div>
+                <div class="promo-info"><a href="good-cause.html" class="promo-link">Click here</a> to read more</div>
+            </div>
+            <div class="head-buttons">
+                <div class="head-button"><a href="#"><img src="../images/search.png" alt="search"></a></div>
+                <div class="head-button"><a href="#"><img src="../images/basket.png" alt="basket"></a></div>
+                <div class="head-button"><a href="#"><img src="../images/user.png" alt="user-profile"></a></div>
+            </div>
+            <nav class="header">
+                <div class="logo">
+                    <div class="home-page"><a href="../index.html"><img src="../images/logo.jpg" alt="TINC logo" width="250"></a></div>
+                </div>
+                <div class="nav">
+                    <div class="nav-button"><a href="products.html">PRODUCTS</a></div>
+                    <div class="nav-button">GOOD CAUSE</div>
+                    <div class="nav-button"><a href="sales.html">SALES</a></div>
+                    <div id="main-cat" class="nav-button"><a href="about-us.html">ABOUT US</a></div>
+                </div>
+            </nav>
+        </header>
+        <main class="body">
+            <h1 class="intro">MEET THE OWNERS</h1>
+            <section class="description">
+                <p>Hello and welcome to the website about TINC!
+                    <br><br>
+                    TINC is a company that is new to the market. At our shop you can find products that are sustainable, environmentally friendly, natural, vegan and organic.
+                    <br><br>
+                    The shop has been open for almost a year. We have only one shop in the second largest city of Denmark – Aarhus, but sometimes you can find us in your city’s local festivals.
+                    <br><br>
+                    We do not compromise on quality of products, but at the same time we would like to give our customers a reasonable and affordable price. All of the products in our shop are from European countries.
+                    <br><br>
+                    We care about our planet earth, because we believe, that there is no plan B, so actions should be taken now. From some of the products you buy, we give a certain percentage of money as donations to foundations. If you want to read more about it, check out our “Good cause” page.
+                    <br><br>
+                    It means a lot to support a good purpose in one way or another, so it is very important to us that our products would fit into all the requirements. We must protect the environment, our surroundings and future generations, so why not to start today? Why not to start with TINC?
+                    <br><br>
+                    We hope our customers will have a pleasant experience shopping online, but also in the store. If you want to know more about our products or get help once you are in a doubt, come down to the heart of Aarhus and visit us in our lovely shop.
+                </p>
+            </section>
+            <section class="content">
+                <div class="video">
+                    <video src="../video/interview.mp4" poster="../images/video-poster.png" width="560" height="315" controls></video>
+                </div>
+                <div class="map-box">
+                    <div id="map"></div>
+                </div>
+                <div class="contacts-box">
+                    <div class="contacts-head">
+                        <h1>Contacts</h1>
+                    </div>
+                    <div class="contacts">
+                        <p class="text-1">
+                            Feel free to invite us to your local event! We will gladly bring the bright mood, positive energy and sustainable goods!
+                            <br><br>
+                            If you want to reach out to us, the easiest way is to find us in the shop or contact us through the email: aarhus@tinc.shop
+                        </p>
+                        <p class="text-2">
+                            <span class="strong">Our address:</span><br>Frederiksgade 22,<br>8000 Aarhus
+                            <br><br>
+                            <span class="strong">We are open:</span>
+                            <br>
+                            Monday to<br>Thursday: 09 – 18
+                            <br>
+                            Friday: 09 – 19
+                            <br>
+                            Saturday: 10 – 17
+                            <br>
+                            Sunday: 11 - 16
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="top-footer">
+                <div class="hours">
+                    <h2>Opening Hours</h2>
+                    <ul>
+                        <li>Monday: 09 - 18</li>
+                        <li>Tuesday: 09 - 18</li>
+                        <li>Wednesday: 09 - 18</li>
+                        <li>Thursday: 09 - 18</li>
+                        <li>Friday: 09 - 19</li>
+                        <li>Saturday: 10 -17</li>
+                        <li>Sunday: 11 -16</li>
+                    </ul>
+                </div>
+                <div class="contacters">
+                    <div class="adress">
+                        <h2>Address</h2>
+                        <span>Frederiksgade 22, 8000 Aarhus</span>
+                    </div>
+                    <div class="email">
+                        <h2>Email</h2>
+                        <span>aarhus@tinc.shop </span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="@">
+                    <h3>&#9400; 2019 TINC</h3>
+                </div>
+                <div class="some">
+                    <div class="insta">
+                        <a href="https://www.instagram.com/tinc.shop/" target="_blank"><img src="../images/insta.png" alt="Instagram link"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/TINC.SHOP/" target="_blank"><img src="../images/fb.png" alt="Facebook link"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicG9zaGtpaSIsImEiOiJjanR6aWRyN3IxajBzNDRwbHdidGVmbW4wIn0.DECcbIftwEul4yvcqVBFlA';
+        const map = new mapboxgl.Map({
+            container: "map",
+            style: 'mapbox://styles/poshkii/cjvz3vynn05ya1cpokv8j7q9j',
+            center: [10.205892, 56.155718],
+            zoom: 13.0,
+        });
+        var geojson = {
+            type: 'FeatureCollection',
+            features: [{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [10.205892, 56.155718]
+                },
+                properties: {
+                    title: 'Mapbox',
+                    description: 'TINC shop'
+                }
+            }]
+        };
+
+        geojson.features.forEach(function(marker) {
+
+
+            var el = document.createElement('div');
+            el.className = 'marker';
+
+
+            new mapboxgl.Marker(el)
+                .setLngLat([10.205892, 56.155718])
+                .addTo(map);
+        });
+
+    </script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        };
+
+    </script>
+    <script type="text/javascript" src="../java/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../java/MyJS.min.js"></script>
+</body>
+
+</html>
